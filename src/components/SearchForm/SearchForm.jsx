@@ -15,8 +15,8 @@ export const SearchForm = () => {
       <BtnSearch type="submit">
         <FiSearch size="16px" />
       </BtnSearch>
-      <Select aria-label="select" name="region" required>
-        <option selected disabled defaultValue="">
+      <Select aria-label="select" name="region" required value={query}> //прописати query
+        <option selected value="">
           Select a region and press enter
         </option>
         {regions &&
